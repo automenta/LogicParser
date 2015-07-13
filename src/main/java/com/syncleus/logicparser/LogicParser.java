@@ -17,4 +17,34 @@
 package com.syncleus.logicparser;
 
 public class LogicParser {
+    private final Linked<Linked<?,?,?>,Linked<?,?,?>,?> head;
+
+    public LogicParser(final String logicString) {
+        this.head = new LinkedString<>(null, null, logicString);
+
+        this.parse();
+    }
+
+    private void parse() {
+    }
+
+    private String toBaseString() {
+        Linked<?,?,?> currentLink = this.head;
+        final StringBuilder baseBuilder = new StringBuilder();
+        do {
+            baseBuilder.append(this.head.toBaseString());
+            currentLink = currentLink.getAfter();
+        } while(currentLink != null);
+        return baseBuilder.toString();
+    }
+
+    public String toString() {
+        Linked<?,?,?> currentLink = this.head;
+        final StringBuilder baseBuilder = new StringBuilder();
+        do {
+            baseBuilder.append(this.head.toString());
+            currentLink = currentLink.getAfter();
+        } while(currentLink != null);
+        return baseBuilder.toString();
+    }
 }
