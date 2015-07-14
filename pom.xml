@@ -112,6 +112,15 @@
     </repositories>
 
     <dependencies>
+
+
+        <dependency>
+            <groupId>com.github.fge</groupId>
+            <artifactId>grappa</artifactId>
+            <version>2.0.3</version>
+
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="libraryTable">
+  <library name="Maven: me.qmx.jitescript:jitescript:0.4.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/me/qmx/jitescript/jitescript/0.4.0/jitescript-0.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/me/qmx/jitescript/jitescript/0.4.0/jitescript-0.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/me/qmx/jitescript/jitescript/0.4.0/jitescript-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
