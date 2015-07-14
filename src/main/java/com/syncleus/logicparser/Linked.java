@@ -16,11 +16,11 @@
  */
 package com.syncleus.logicparser;
 
-public interface Linked<B extends Linked<?,?,?>, A extends Linked<?,?,?>, V> extends NestedString {
-    B getBefore();
-    void setBefore(B before);
-    A getAfter();
-    void setAfter(A after);
-    V getValue();
-    void setValue(V value);
+public interface Linked extends NestedString {
+    Linked getBefore();
+    void setBefore(Linked before);
+    Linked getAfter();
+    void setAfter(Linked after);
+    Object getValue();
+    void setValue(Object value);
 }

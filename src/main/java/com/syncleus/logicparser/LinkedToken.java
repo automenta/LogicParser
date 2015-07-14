@@ -16,18 +16,8 @@
  */
 package com.syncleus.logicparser;
 
-public class LinkedLogic<B extends Linked<?,?,?>, A extends Linked<?,?,?>, V extends Logic> extends LinkedObject<B,A,V> {
-    public LinkedLogic(final B before, final A after, final V value) {
+public class LinkedToken extends LinkedSymbol {
+    public LinkedToken(Linked before, Linked after, Object value) {
         super(before, after, value);
-    }
-
-    @Override
-    public String toBaseString() {
-        return "";
-    }
-
-    @Override
-    public String toString() {
-        return this.getValue().toString();
     }
 }

@@ -16,5 +16,14 @@
  */
 package com.syncleus.logicparser;
 
-public interface Logic {
+public class StringToken implements Token {
+    private final String value;
+
+    public StringToken(String value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return this.value;
+    }
 }

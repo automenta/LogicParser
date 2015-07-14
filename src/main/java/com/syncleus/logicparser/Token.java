@@ -16,18 +16,5 @@
  */
 package com.syncleus.logicparser;
 
-public class LinkedString extends LinkedObject {
-    public LinkedString(final Linked before, final Linked after, final String value) {
-        super(before, after, value);
-    }
-
-    @Override
-    public String toBaseString() {
-        return (String) this.getValue();
-    }
-
-    @Override
-    public String toString() {
-        return (String) this.getValue();
-    }
+public interface Token extends Symbol {
 }

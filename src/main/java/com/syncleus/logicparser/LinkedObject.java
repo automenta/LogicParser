@@ -16,44 +16,44 @@
  */
 package com.syncleus.logicparser;
 
-public abstract class LinkedObject<B extends Linked<?,?,?>, A extends Linked<?,?,?>, V> implements Linked<B,A,V> {
-    private B before;
-    private A after;
-    private V value;
+public abstract class LinkedObject implements Linked {
+    private Linked before;
+    private Linked after;
+    private Object value;
 
-    public LinkedObject(final B before, final A after, final V value) {
+    public LinkedObject(final Linked before, final Linked after, final Object value) {
         this.before = before;
         this.after = after;
         this.value = value;
     }
 
     @Override
-    public B getBefore() {
+    public Linked getBefore() {
         return before;
     }
 
     @Override
-    public A getAfter() {
+    public Linked getAfter() {
         return after;
     }
 
     @Override
-    public V getValue() {
+    public Object getValue() {
         return value;
     }
 
     @Override
-    public void setBefore(final B before) {
+    public void setBefore(final Linked before) {
         this.before = before;
     }
 
     @Override
-    public void setAfter(final A after) {
+    public void setAfter(final Linked after) {
         this.after = after;
     }
 
     @Override
-    public void setValue(final V value) {
+    public void setValue(final Object value) {
         this.value = value;
     }
 }

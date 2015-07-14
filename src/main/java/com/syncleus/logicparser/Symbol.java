@@ -16,12 +16,5 @@
  */
 package com.syncleus.logicparser;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-public class LogicParserTest {
-    @Test
-    public void testNothing() {
-        Assert.assertTrue(true);
-    }
+public interface Symbol {
 }

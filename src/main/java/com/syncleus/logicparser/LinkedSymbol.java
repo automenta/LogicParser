@@ -16,18 +16,18 @@
  */
 package com.syncleus.logicparser;
 
-public class LinkedString extends LinkedObject {
-    public LinkedString(final Linked before, final Linked after, final String value) {
+public abstract class LinkedSymbol extends LinkedObject {
+    public LinkedSymbol(final Linked before, final Linked after, final Object value) {
         super(before, after, value);
     }
 
     @Override
     public String toBaseString() {
-        return (String) this.getValue();
+        return " ";
     }
 
     @Override
     public String toString() {
-        return (String) this.getValue();
+        return this.getValue().toString();
     }
 }
